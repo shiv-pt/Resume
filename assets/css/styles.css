@@ -1,4 +1,15 @@
-
+nav {
+  background-color: black;
+}
+.navbar {
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
 .about-me {
   text-align: center;
 }
