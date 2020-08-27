@@ -8,6 +8,7 @@
   <meta name="description" content="Details about my website">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
@@ -15,34 +16,36 @@
   <!-- Build your first site here -->
   <div class="wrapper">
     <header class="page-header">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Shivam Prajapati</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+    <a class="navbar-brand" href="#">   Shivam Prajapati</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" style="font-size: 20px;"><i class="fa fa-home" style="font-size:25px"></i> Home  <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#middle" onClick="document.getElementById('about').scrollIntoView();" style="font-size: 20px;" ><i class="fa fa-address-card-o" style="font-size:25px"></i> About  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/">Facebook</a>
+          <a class="nav-link" href="#bottom" onClick="document.getElementById('projects').scrollIntoView();" style="font-size: 20px;"><i class="fa fa-file-archive-o" style="font-size:25px"></i> Projects  </a>
+        </li>
+        <div class="d-flex justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/" style="font-size: 20px;"><i class="fa fa-facebook-square" style="font-size:25px"></i> Facebook  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Instagram</a>
+          <a class="nav-link" href="#" style="font-size: 20px;"><i class="fa fa-instagram" style="font-size:25px"></i> Instagram  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Twitter</a>
+          <a class="nav-link" href="#" style="font-size: 20px;"><i class="fa fa-twitter" style="font-size:25px"></i> Twitter  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Linkdin</a>
+          <a class="nav-link" href="#" style="font-size: 20px;"> <i class="fa fa-linkedin-square" style="font-size:25px"></i> Linkedin  </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
+      </div>
       </ul>
     </div>
   </nav>
@@ -55,7 +58,7 @@
         <h1>Welcome to my website</h1>
         <p>This website will serve as my online resume. Want to know about me? Read the stuff here !</p>
         <hr/>
-        <button class="btn btn-outline-secondary">Contact me</button>
+        <button class="btn btn-outline-info">Contact me</button>
         </center>
       </div>
     </section>
@@ -91,7 +94,7 @@
     <section id="about">
       <div class="container">
         <center>
-        <div class="card text-white bg-dark mb-3"> 
+        <div class="card text-white bg-dark border-info mb-3"> 
           <div class="aboutmeheader col-xs-12">
             <div class="card-header"><h2>About me</h2></div>
           </div>
@@ -125,52 +128,61 @@
        </div>
       </div>
     </section>
+    <br />
 
 <div class="container">
-     <section id="projects">
-    <h1> This is projects </h1>
-    <p>
-      Will be adding stuff here soon!
-    </p>
-  </section>
+  <section id = "projects">
+  <div class="card border-info mb-3" >
+    <div class="header bg-info">
+      <h1 class="card-header text-white"> This is projects </h1>
+    </div>
+    <div class="card-body ">
+      <p class="card-text">Will be adding stuff here soon!</p>
+    </div>
+  </div>
+  <div class="card border-info mb-3">
+    <div class="header bg-info">
+      <h1 class="card-header text-white"> This is contact </h1>
+    </div>
+    <div class ="card-body ">
+      <p class="card-text">Will be adding stuff here soon!</p>
+    </div>
+  </div>
+</section>
 </div>
+<br />
 <div class="container">
-  <section id="contact">
-    <h1> This is contact </h1>
-    <p>
-      Will be adding stuff here soon!
-    </p>
-  </section>
+  <table class="table">
+    <thead>
+      <tr class="table-dark text-dark">
+        <th>Class</th>
+        <th>Year of Passing</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-secondary">
+        <td>12th</td>
+        <td>2k19</td>
+        <td>93%</td>
+      </tr>
+      <tr class="table-secondary">
+        <td>10th</td>
+        <td>2k17</td>
+        <td>10 CGPA</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<div class="container">
-    <section>
-      <h2>My marks</h2>
-      <table>
-        <tr>
-          <td>Class</td>
-          <td>Year</td>
-          <td>Grade</td>
-        </tr>
-        <tr>
-          <td>12th</td>
-          <td>2019</td>
-          <td>95%</td>
-        </tr>
-        <tr>
-          <td>10th</td>
-          <td>2017</td>
-          <td>95%</td>
-        </tr>
-      </table>
-    </section>
-</div>
+<br/>
+<br/>
 
     <footer class="page-footer">
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      Built with love during <a href="https://www.scaler.com/edge/">Scaler Edge</a> Workshop.
+      <center>
+      <div class="footer-copyright text-center py-3">© 2020:
+      Built with love
       </div>
-      <!-- Copyright -->
+    </center>
     </footer>
   </div>
 
@@ -184,5 +196,3 @@
 </body>
 
 </html>
-
-
