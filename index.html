@@ -7,7 +7,7 @@
   <title>Shivam's Webpage</title>
   <meta name="description" content="Details about my website">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" type = "text/css" href="./assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -16,7 +16,7 @@
   <!-- Build your first site here -->
   <div class="wrapper">
     <header class="page-header">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark text-center" data-spy="affix" data-offset-top="197">
     <a class="navbar-brand" href="#">   Shivam Prajapati</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,8 @@
         <li class="nav-item">
           <a class="nav-link" href="#bottom" onClick="document.getElementById('projects').scrollIntoView();" style="font-size: 20px;"><i class="fa fa-file-archive-o" style="font-size:25px"></i> Projects  </a>
         </li>
-        <div class="d-flex justify-content-end">
+        </ul>
+        <ul class= "navbar-nav nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link" href="https://www.facebook.com/" style="font-size: 20px;"><i class="fa fa-facebook-square" style="font-size:25px"></i> Facebook  </a>
         </li>
@@ -45,7 +46,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#" style="font-size: 20px;"> <i class="fa fa-linkedin-square" style="font-size:25px"></i> Linkedin  </a>
         </li>
-      </div>
       </ul>
     </div>
   </nav>
@@ -164,7 +164,7 @@
       <tr class="table-secondary">
         <td>12th</td>
         <td>2k19</td>
-        <td>93%</td>
+        <td>95%</td>
       </tr>
       <tr class="table-secondary">
         <td>10th</td>
@@ -177,13 +177,12 @@
 <br/>
 <br/>
 
-    <footer class="page-footer">
+    <div class="pageFooter">
       <center>
-      <div class="footer-copyright text-center py-3">© 2020:
-      Built with love
+      <div class="text-center py-3">
+        <p class="text-center">© 2020: Built with love | "Do what you enjoy !"</p>
       </div>
     </center>
-    </footer>
   </div>
 
 
