@@ -1,4 +1,6 @@
-
+body {
+  background-color: #F3FFFF;
+}
 .about-me {
   text-align: center;
 }
@@ -6,3 +8,12 @@
     position: fixed;
     bottom: 0;
 }
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+  padding-top: 70px;
+}
+
+
+
