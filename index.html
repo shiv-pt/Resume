@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Shivam's Webpage</title>
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/fav.png"/>
   <meta name="description" content="Details about my website">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type = "text/css" href="./assets/css/styles.css">
@@ -16,7 +17,7 @@
   <!-- Build your first site here -->
   <div class="wrapper">
     <header class="page-header">
-  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark text-center" data-spy="affix" data-offset-top="197">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark text-center" data-spy="affix" data-offset-top="197">
     <a class="navbar-brand" href="#">   Shivam Prajapati</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,16 +36,19 @@
         </ul>
         <ul class= "navbar-nav nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/" style="font-size: 20px;"><i class="fa fa-facebook-square" style="font-size:25px"></i> Facebook  </a>
+          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100004815280946" target="_blank" style="font-size: 20px;"><i class="fa fa-facebook-square" style="font-size:25px"></i> Facebook  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="font-size: 20px;"><i class="fa fa-instagram" style="font-size:25px"></i> Instagram  </a>
+          <a class="nav-link" href="https://www.instagram.com/let.it.be_x/" target="_blank" style="font-size: 20px;"><i class="fa fa-instagram" style="font-size:25px"></i> Instagram  </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" style="font-size: 20px;"><i class="fa fa-twitter" style="font-size:25px"></i> Twitter  </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="font-size: 20px;"> <i class="fa fa-linkedin-square" style="font-size:25px"></i> Linkedin  </a>
+          <a class="nav-link" href="https://www.linkedin.com/in/shivam-prajapati-3a6115146/" target="_blank" style="font-size: 20px;"> <i class="fa fa-linkedin-square" style="font-size:25px"></i> Linkedin  </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/shiv-pt" target="_blank" style="font-size: 20px;"> <i class="fa fa-github" style="font-size:25px"></i> Github  </a>
         </li>
       </ul>
     </div>
@@ -53,10 +57,11 @@
   </div>
 
     <section id="lead">
+    </br></br>
         <h1>Welcome to my website</h1>
         <p>This website will serve as my online resume. Want to know about me? Read the stuff here!</p>
         <hr/>
-        <button class="btn btn-outline-info">Contact me</button>
+        <a class="nav-link" href="#bottom" onClick="document.getElementById('projects').scrollIntoView();" style="font-size: 20px;"><button class="btn btn-outline-info">Contact me</button></a>
     </section>
     <section id="anime">
     <h1 class="ml11">
@@ -71,6 +76,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -81,6 +87,9 @@
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="https://www.designyourway.net/blog/wp-content/uploads/2018/12/programming-wallpaper3-800x600.jpg" alt="Third slide" height="500px" width="700px">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/tabla.png" alt="Third slide" height="500px" width="700px">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -140,7 +149,19 @@
       <h1 class="card-header text-white"> These are projects </h1>
     </div>
     <div class="card-body ">
-      <p class="card-text">Will be adding stuff here soon!</p>
+      <p class="card-text">
+        1. A full stack restaurant website using React, Node and MongoDB.</br>
+        2. Learn-o-vate: Online learning platform using HTML, CSS, Bootstrap, JS, Node and MongoDB
+        <a href="https://glitch.com/edit/#!/elemental-bubble-postbox" target="_blank" style="color: #0a82a7; background-color: transparent;">
+        (group project).
+        </a>
+      </br>
+      3. A liesure basic webpage using HTML, CSS and javascript built while exploring and learning.
+      <a href="https://shiv-pt.github.io/" target="_blank" style="color: #0a82a7; background-color: transparent;">
+      (visit here)
+      </a>
+      </br>
+      -> Will be adding more stuff here soon!</p>
     </div>
   </div>
   <div class="card border-info mb-3">
@@ -148,7 +169,7 @@
       <h1 class="card-header text-white"> This is contact </h1>
     </div>
     <div class ="card-body ">
-      <p class="card-text">Will be adding stuff here soon!</p>
+      <p class="card-text">Contact me through any of the platform links provided ;)</p>
     </div>
   </div>
 </section>
